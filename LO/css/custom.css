@@ -1,0 +1,420 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+
+html, body {
+    	height: 100%;
+    	margin: 0px;
+}
+
+.page-wrapper{
+	height: 100%;
+}
+
+body{
+	transition:all 0.3s ease-out;
+	background: #bdb5b5; /* For browsers that do not support gradients */
+	 /* For Safari 5.1 to 6.0 */
+	 /* For Opera 11.1 to 12.0 */
+	 /* For Firefox 3.6 to 15 */
+	 /* Standard syntax */
+	background-size: 100% 100%;
+	font-family:"Droid Arabic Kufi","Verdana","Simplified Arabic";;
+}
+.container{
+	padding:0px;
+	margin-top:0px;
+	position: relative;
+	overflow:hidden;
+	background: #ce0000; /* For browsers that do not support gradients */
+	/* z-index: -10; */
+	/* height: 100%; */
+}
+
+
+header{
+	
+}
+
+.headerArea{
+	background: #ffffff;
+	border-radius: 0px 0px 0px 40px;
+	box-shadow: -5px 5px 35px black;
+	height: 130px;
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+.logo{
+	
+	float: right;
+		
+	margin: 15px 20px;
+}
+
+.coollingLogo{
+		
+	float: left;
+}
+
+
+.courseTitle{
+	
+text-align: center;
+	
+position: absolute;
+	
+font-size: 25pt;
+	
+width: 100%;
+	
+padding: 20px 25%;
+}
+
+
+
+.navigationButtons{
+	height: 70px;
+}
+
+.content{
+	
+background: #ffffff;
+	
+border-radius: 0px 40px 0px 0px;
+	
+box-shadow: 5px 5px 35px black;
+	
+min-height: 400px;
+	
+/* width: 100%; */
+	
+/* position: absolute; */
+	
+display: inline-block;
+	
+padding-top: 5px;
+}
+
+
+
+
+
+#footerContent{
+	min-height: 40px;
+	display: inline;
+	background: black;
+}
+
+
+.copyrights{
+	text-align: center;
+	padding: 1%;
+	font-size: 14px;
+	color: #ffffff;
+	margin: 0px;
+	font-family: "beINNormal","Arial","Simplified Arabic";
+}
+
+
+
+
+
+
+
+
+
+.navButtons{
+	position:relative;
+	background-color: rgba(255,255,255,0);
+	border:none;
+}
+
+
+.buttons{
+	padding:0px;
+	
+	margin-top:0px;
+}
+
+.navButton {
+	background: rgba(0,0,0,0);
+	transition:all 0.4s;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	px; */
+	overflow: visible;
+	/* width: 100%; */
+	border: none;
+}
+
+.navButton span{
+	font-family:"Droid Arabic Kufi","Verdana","Simplified Arabic";
+	font-size: 25px;
+	font-weight:normal;
+	margin: 15px 20px;
+	line-height: 59px;
+}
+
+.navButton img{
+	margin:auto;
+	float: right;
+}
+
+
+.nav{
+	width:100%;
+	padding:0px;
+}
+
+.nav li{
+	/* width:25%; */
+	padding: 5px 2px 0px;
+}
+
+
+
+.navButton:before {
+	
+	content:"  ";
+		
+	position:absolute;
+		
+	top: 69px;
+		
+	width: 0;
+		
+	height: 0;
+		
+	border-style: solid;
+		
+	border-width: 0px 15px 12px 15px;
+		
+	border-color: transparent transparent #ffffff transparent;
+		
+	opacity: 0;
+		
+	left: 30%;
+		
+	z-index: 1;
+		
+	transition: all 0.3s;
+}
+
+
+
+
+
+
+
+.navButton:hover::before {
+	opacity: 1;
+	
+	top: 58px;
+}
+
+
+
+.navButton:hover img {
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+
+.navButton:hover span{
+	text-shadow: 2px 2px #000000;
+}
+
+
+.line{
+	width: 100%;
+	height: 46px;
+	border-bottom: 1px solid #6a6a6a;
+	/* position: absolute; */
+	margin-top: -43px;
+}
+
+.path{
+	
+	float: right;
+		
+	padding-right: 20px;
+		
+	padding-top: 8px;
+		
+	font-size: 14pt;
+}
+
+.pagesNavigation{
+	direction: rtl;
+	display: inline-flex;
+	color: #6a6a6a;
+}
+
+.pagesNavigationIcon{
+	padding: 0px 3px;
+	cursor: pointer;
+}
+
+.pagesNavigationIcon img{
+	width: 35px;
+}
+
+.pagesNavigationCounter{
+	
+	padding: 3px 5px;
+		
+	font-size: 15pt;
+}
+
+
+
+
+@media (min-width: 1200px){
+	/* only Large Devices */
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+	/* only Medium Devices */
+	
+	.navigationButtons {
+		height: 62px;
+	}
+	
+	.navButton span{
+		font-size: 23px;
+		line-height: 54px;
+		margin: 8px;
+	}
+	
+	.navButton img{
+		width: 50px;
+	}
+	
+	.navButton:hover::before {
+		top: 50px;
+	}
+	
+	.path{		
+		font-size: 12pt;		
+		padding-top: 6px;
+	}
+	
+	.pagesNavigationIcon{
+		padding: 0px 2px;
+	}
+	
+	.pagesNavigationIcon img{
+		width: 31px;
+	}
+	
+	.pagesNavigationCounter{
+		font-size: 13pt;		
+		padding-top: 4px;
+	}
+	
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	/* only Small Devices */
+	.courseTitle{
+					
+		font-size: 20pt;
+							
+		padding-right: 33%;
+							
+		padding-left: 10%;
+	}
+	
+	.navigationButtons {
+		height: 51px;
+	}
+		
+
+	.navButton span{
+
+		font-size: 18px;
+		
+		margin: 5px;
+		
+		line-height: 44px;
+		
+	}
+	
+	.navButton img{
+		width: 40px;
+	}
+	
+	.navButton:hover::before {
+		top: 40px;
+	}
+	
+	.path{
+		
+		font-size: 10pt;
+				
+		padding-top: 5px;
+	}
+
+	.pagesNavigationIcon{
+		padding: 0px 1.5px;
+	}
+	
+	.pagesNavigationIcon img{
+		width: 27px;
+	}
+	
+	.pagesNavigationCounter{
+		font-size: 13pt;
+		padding: 2px 3px;
+	}
+	
+	.contentArea{
+		
+padding: 5px 0px;
+		
+/* border: none; */
+		
+/* margin: 10px; */
+	}
+	
+}
+@media (max-width: 768px) {
+	/* only Extra Small */
+	
+	.headerArea {
+		/* border-radius: 0px; */
+	} 
+		
+	.courseTitle{
+					
+		font-size: 17pt;
+							
+		padding-left: 1%;
+							
+		padding-right: 45%;
+	}
+	
+	
+	.content{
+	
+		
+		width: 91%;
+			
+		display: inline-block;
+	}
+	
+	.logo{
+		width: 130px;
+		margin: 25px 12px;
+	}
+
+}
+
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	
+}
